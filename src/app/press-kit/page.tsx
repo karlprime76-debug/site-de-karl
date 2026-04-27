@@ -346,15 +346,6 @@ export default async function PressKitPage() {
               <ListBlock title={pk.pressElementsTitle} items={pk.pressElements} />
             </div>
           </div>
-
-          <div className="mt-6 rounded-2xl border border-white/10 bg-white/5 p-6">
-            <p className="text-sm font-semibold text-zinc-50">
-              {dict.pressKit.howToUseTitle}
-            </p>
-            <p className="mt-2 text-sm leading-6 text-zinc-300">
-              {dict.pressKit.howToUseBody}
-            </p>
-          </div>
         </div>
       </div>
     </div>
