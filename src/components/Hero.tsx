@@ -51,19 +51,19 @@ export async function Hero() {
 
         <div className="mt-14 grid gap-3 sm:grid-cols-3">
           <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
-            <p className="text-xs font-medium text-zinc-300">Latest Release</p>
-            <p className="mt-2 text-sm font-semibold text-zinc-50">Night Drive — Single</p>
-            <p className="mt-1 text-xs text-zinc-300">Available on major platforms</p>
+            <p className="text-xs font-medium text-zinc-300">{dict.home.heroCard1Title}</p>
+            <p className="mt-2 text-sm font-semibold text-zinc-50">{dict.home.latestReleaseTitle}</p>
+            <p className="mt-1 text-xs text-zinc-300">{dict.home.heroCard1Body}</p>
           </div>
           <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
-            <p className="text-xs font-medium text-zinc-300">Visuals</p>
-            <p className="mt-2 text-sm font-semibold text-zinc-50">New clips + sessions</p>
-            <p className="mt-1 text-xs text-zinc-300">High-end direction, minimal noise</p>
+            <p className="text-xs font-medium text-zinc-300">{dict.home.heroCard2Title}</p>
+            <p className="mt-2 text-sm font-semibold text-zinc-50">{dict.pages.videosTitle}</p>
+            <p className="mt-1 text-xs text-zinc-300">{dict.home.heroCard2Body}</p>
           </div>
           <div className="rounded-2xl border border-white/10 bg-white/5 p-5">
-            <p className="text-xs font-medium text-zinc-300">Live</p>
-            <p className="mt-2 text-sm font-semibold text-zinc-50">Shows & bookings</p>
-            <p className="mt-1 text-xs text-zinc-300">Clubs, festivals, brands</p>
+            <p className="text-xs font-medium text-zinc-300">{dict.home.heroCard3Title}</p>
+            <p className="mt-2 text-sm font-semibold text-zinc-50">{dict.pages.bookingTitle}</p>
+            <p className="mt-1 text-xs text-zinc-300">{dict.home.heroCard3Body}</p>
           </div>
         </div>
       </div>

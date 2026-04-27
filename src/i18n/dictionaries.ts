@@ -23,6 +23,12 @@ export type Dictionary = {
   };
   home: {
     heroLine: string;
+    heroCard1Title: string;
+    heroCard1Body: string;
+    heroCard2Title: string;
+    heroCard2Body: string;
+    heroCard3Title: string;
+    heroCard3Body: string;
     latestReleaseTitle: string;
     latestReleaseSubtitle: string;
     recentVideosTitle: string;
@@ -176,6 +182,12 @@ export const dictionaries: Record<Locale, Dictionary> = {
     },
     home: {
       heroLine: "Minimal noise. Maximum impact.",
+      heroCard1Title: "Dernière sortie",
+      heroCard1Body: "Écoute la sélection officielle.",
+      heroCard2Title: "Visuels",
+      heroCard2Body: "Clips et sessions officiels.",
+      heroCard3Title: "Booking",
+      heroCard3Body: "Shows, festivals, collaborations.",
       latestReleaseTitle: "Dernières sorties",
       latestReleaseSubtitle:
         "Une sélection officielle.",
@@ -357,6 +369,12 @@ export const dictionaries: Record<Locale, Dictionary> = {
     },
     home: {
       heroLine: "Minimal noise. Maximum impact.",
+      heroCard1Title: "Latest release",
+      heroCard1Body: "Listen to the official selection.",
+      heroCard2Title: "Visuals",
+      heroCard2Body: "Official clips and sessions.",
+      heroCard3Title: "Booking",
+      heroCard3Body: "Shows, festivals, collaborations.",
       latestReleaseTitle: "Latest releases",
       latestReleaseSubtitle:
         "An official selection.",
