@@ -174,13 +174,13 @@ export const dictionaries: Record<Locale, Dictionary> = {
       heroLine: "Minimal noise. Maximum impact.",
       latestReleaseTitle: "Dernières sorties",
       latestReleaseSubtitle:
-        "Une sélection officielle. Modifie facilement dans data/music.ts.",
+        "Une sélection officielle.",
       recentVideosTitle: "Vidéos récentes",
       recentVideosSubtitle:
-        "Clips, sessions et visuels officiels — pensée mobile-first.",
+        "Clips, sessions et visuels officiels.",
       nextDatesTitle: "Prochaines dates",
       nextDatesSubtitle:
-        "Concerts, événements et annonces. Modifie dans data/shows.ts.",
+        "Concerts, événements et annonces.",
       shopTitle: "Boutique",
       shopSubtitle: "Drops premium — présentation minimaliste et luxe.",
       fanClubTitle: "Fan Club",
@@ -189,19 +189,18 @@ export const dictionaries: Record<Locale, Dictionary> = {
       bookingCardTitle: "Booking",
       bookingCardBody:
         "Pour bookings, collaborations, marques et demandes médias.",
-      bookingCardFoot:
-        "Le contenu est centralisé dans profile.ts pour des mises à jour rapides.",
+      bookingCardFoot: "Contacts officiels et réponses rapides.",
     },
     pages: {
       musicTitle: "Musique",
       musicSubtitle:
-        "Singles, projets et sorties officielles. Modifie dans data/music.ts.",
+        "Singles, projets et sorties officielles.",
       videosTitle: "Vidéos",
       videosSubtitle:
-        "Visuels YouTube officiels. Modifie dans data/videos.ts.",
+        "Visuels YouTube officiels.",
       liveTitle: "Live / Shows",
       liveSubtitle:
-        "Dates, événements et annonces. Modifie dans data/shows.ts.",
+        "Dates, événements et annonces.",
       liveEmpty: "Aucune date annoncée pour le moment.",
       bookingTitle: "Booking",
       bookingSubtitle:
@@ -351,38 +350,37 @@ export const dictionaries: Record<Locale, Dictionary> = {
       heroLine: "Minimal noise. Maximum impact.",
       latestReleaseTitle: "Latest releases",
       latestReleaseSubtitle:
-        "A curated official selection. Easy to update in data/music.ts.",
+        "An official selection.",
       recentVideosTitle: "Recent videos",
       recentVideosSubtitle:
-        "Official visuals and sessions — designed mobile-first.",
+        "Official visuals, sessions and clips.",
       nextDatesTitle: "Next dates",
       nextDatesSubtitle:
-        "Shows, events and announcements. Update in data/shows.ts.",
+        "Shows, events and announcements.",
       shopTitle: "Shop",
-      shopSubtitle: "Premium drops — minimal, luxury presentation.",
+      shopSubtitle: "Premium drops — minimal and luxury presentation.",
       fanClubTitle: "Fan Club",
       fanClubSubtitle:
         "Join KARL’s world and receive drops, music, videos and live updates.",
       bookingCardTitle: "Booking",
       bookingCardBody:
-        "For bookings, collaborations, brand partnerships and media requests.",
-      bookingCardFoot:
-        "Content is centralized in profile.ts for fast updates.",
+        "For bookings, collaborations, brands and media requests.",
+      bookingCardFoot: "Official contacts and fast replies.",
     },
     pages: {
       musicTitle: "Music",
       musicSubtitle:
-        "Singles, projects and official releases. Update in data/music.ts.",
+        "Singles, projects and official releases.",
       videosTitle: "Videos",
       videosSubtitle:
-        "Official YouTube visuals. Update in data/videos.ts.",
+        "Official YouTube visuals.",
       liveTitle: "Live / Shows",
       liveSubtitle:
-        "Dates, events and announcements. Update in data/shows.ts.",
-      liveEmpty: "No upcoming shows announced yet.",
+        "Dates, events and announcements.",
+      liveEmpty: "No dates announced yet.",
       bookingTitle: "Booking",
       bookingSubtitle:
-        "For bookings, performances, collaborations, brands and media requests.",
+        "Bookings, performances, collaborations, brands and media requests.",
       aboutTitle: "About",
       aboutSubtitle:
         "An official, premium and international introduction.",

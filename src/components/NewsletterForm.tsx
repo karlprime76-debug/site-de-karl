@@ -111,10 +111,6 @@ export function NewsletterForm() {
       {error ? (
         <p className="mt-3 text-xs text-red-200">{error}</p>
       ) : null}
-
-      <p className="mt-3 text-xs text-zinc-500">
-        {dict.forms.noBackendNote}
-      </p>
     </form>
   );
 }
