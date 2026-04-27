@@ -6,7 +6,7 @@ import { getDictionary, getLocale } from "@/i18n/server";
 export async function Hero() {
   const locale = await getLocale();
   const dict = getDictionary(locale);
-  const heroBackgroundSrc = "/press/photos/hero.jpg";
+  const heroBackgroundSrc = "/press/photos/hero-header.jpeg";
 
   return (
     <section className="relative overflow-hidden">
@@ -17,7 +17,7 @@ export async function Hero() {
           fill
           priority
           sizes="100vw"
-          className="object-cover brightness-110 contrast-110"
+          className="object-cover object-[65%_30%] brightness-110 contrast-110"
         />
       </div>
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.10),transparent_55%),radial-gradient(circle_at_10%_80%,rgba(255,215,0,0.06),transparent_55%),radial-gradient(circle_at_90%_25%,rgba(255,255,255,0.06),transparent_45%),linear-gradient(to_bottom,rgba(0,0,0,0.20),rgba(0,0,0,0.85))]" />

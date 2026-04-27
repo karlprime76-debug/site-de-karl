@@ -3,6 +3,7 @@ import "./globals.css";
 
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import { MobileNav } from "@/components/MobileNav";
 import { ServiceWorker } from "@/components/ServiceWorker";
 import { profile } from "@/data/profile";
 import { I18nProvider } from "@/i18n/client";
@@ -85,9 +86,10 @@ export default async function RootLayout({
           <I18nProvider value={{ locale, dict }}>
             <ServiceWorker />
             <Header />
-            <main className="flex min-h-[calc(100vh-4rem)] flex-col pt-16">
+            <main className="flex min-h-[calc(100vh-4rem)] flex-col pt-16 pb-16 md:pb-0">
               {children}
             </main>
+            <MobileNav />
             <Footer />
           </I18nProvider>
         </div>

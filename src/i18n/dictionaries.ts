@@ -88,8 +88,12 @@ export type Dictionary = {
     email: string;
     country: string;
     city: string;
+    consentLabel: string;
     submitting: string;
     joinErrorInvalidEmail: string;
+    joinErrorConsentRequired: string;
+    joinErrorAlreadySubscribed: string;
+    joinErrorRateLimited: string;
     joinErrorGeneric: string;
     joinConfirmTitle: string;
     joinConfirmBody: string;
@@ -255,8 +259,13 @@ export const dictionaries: Record<Locale, Dictionary> = {
       email: "Email",
       country: "Pays",
       city: "Ville",
+      consentLabel:
+        "J’accepte de recevoir des emails de KARL (drops, musique, vidéos et actus).",
       submitting: "Envoi…",
       joinErrorInvalidEmail: "Merci d’entrer une adresse email valide.",
+      joinErrorConsentRequired: "Merci de cocher l’accord pour continuer.",
+      joinErrorAlreadySubscribed: "Cet email est déjà inscrit.",
+      joinErrorRateLimited: "Trop de tentatives. Réessaie dans une minute.",
       joinErrorGeneric: "Impossible d’enregistrer pour le moment. Réessaie dans un instant.",
       joinConfirmTitle: "C’est noté.",
       joinConfirmBody:
@@ -431,8 +440,13 @@ export const dictionaries: Record<Locale, Dictionary> = {
       email: "Email",
       country: "Country",
       city: "City",
+      consentLabel:
+        "I agree to receive emails from KARL (drops, music, videos and updates).",
       submitting: "Sending…",
       joinErrorInvalidEmail: "Please enter a valid email address.",
+      joinErrorConsentRequired: "Please check the agreement to continue.",
+      joinErrorAlreadySubscribed: "This email is already subscribed.",
+      joinErrorRateLimited: "Too many attempts. Please try again in a minute.",
       joinErrorGeneric: "Unable to save right now. Please try again in a moment.",
       joinConfirmTitle: "Locked in.",
       joinConfirmBody:

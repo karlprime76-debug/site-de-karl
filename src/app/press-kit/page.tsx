@@ -262,18 +262,6 @@ export default async function PressKitPage() {
                         </a>
                       ))}
                     </div>
-                    <div className="flex flex-wrap gap-2">
-                      {pressPhotos.map((p) => (
-                        <a
-                          key={`${p.id}:download`}
-                          href={p.src}
-                          download
-                          className="inline-flex h-10 items-center justify-center rounded-full border border-white/10 bg-black/25 px-4 text-xs font-semibold text-zinc-50 transition hover:bg-white/10"
-                        >
-                          {dict.pressKit.download} {p.label}
-                        </a>
-                      ))}
-                    </div>
                   </div>
                 ) : item.key === "logos" ? (
                   <div className="mt-4 grid gap-3">
@@ -297,18 +285,6 @@ export default async function PressKitPage() {
                               className="object-contain p-4 transition duration-500 group-hover:scale-[1.02]"
                             />
                           </div>
-                        </a>
-                      ))}
-                    </div>
-                    <div className="flex flex-wrap gap-2">
-                      {logos.map((l) => (
-                        <a
-                          key={`${l.id}:download`}
-                          href={l.src}
-                          download
-                          className="inline-flex h-10 items-center justify-center rounded-full border border-white/10 bg-black/25 px-4 text-xs font-semibold text-zinc-50 transition hover:bg-white/10"
-                        >
-                          {dict.pressKit.download} {l.label}
                         </a>
                       ))}
                     </div>
