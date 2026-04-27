@@ -88,6 +88,9 @@ export type Dictionary = {
     email: string;
     country: string;
     city: string;
+    submitting: string;
+    joinErrorInvalidEmail: string;
+    joinErrorGeneric: string;
     joinConfirmTitle: string;
     joinConfirmBody: string;
     noBackendNote: string;
@@ -253,11 +256,13 @@ export const dictionaries: Record<Locale, Dictionary> = {
       email: "Email",
       country: "Pays",
       city: "Ville",
-      joinConfirmTitle: "Inscription confirmée.",
+      submitting: "Envoi…",
+      joinErrorInvalidEmail: "Merci d’entrer une adresse email valide.",
+      joinErrorGeneric: "Impossible d’enregistrer pour le moment. Réessaie dans un instant.",
+      joinConfirmTitle: "C’est noté.",
       joinConfirmBody:
-        "Merci. Tu recevras les drops, musiques, vidéos et actus live de KARL.",
-      noBackendNote:
-        "Pas de backend pour l’instant — confirmation côté front uniquement.",
+        "Tu es bien inscrit(e). À très vite pour les prochains drops et annonces.",
+      noBackendNote: "Tes infos sont enregistrées. Tu peux fermer la page.",
 
       fullName: "Nom complet",
       phoneWhatsapp: "Téléphone / WhatsApp",
@@ -428,11 +433,13 @@ export const dictionaries: Record<Locale, Dictionary> = {
       email: "Email",
       country: "Country",
       city: "City",
-      joinConfirmTitle: "You’re in.",
+      submitting: "Sending…",
+      joinErrorInvalidEmail: "Please enter a valid email address.",
+      joinErrorGeneric: "Unable to save right now. Please try again in a moment.",
+      joinConfirmTitle: "Locked in.",
       joinConfirmBody:
-        "Thanks for joining KARL’s world. You’ll receive drops, music, videos and show updates.",
-      noBackendNote:
-        "No backend yet — this form confirms on the front-end only.",
+        "You’re in. See you soon for the next drops and announcements.",
+      noBackendNote: "Your info is saved. You can close this page.",
 
       fullName: "Full name",
       phoneWhatsapp: "Phone / WhatsApp",

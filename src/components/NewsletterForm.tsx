@@ -10,6 +10,8 @@ export function NewsletterForm() {
   const [country, setCountry] = useState("");
   const [city, setCity] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const canSubmit = useMemo(() => {
     return email.trim().length > 3;
@@ -31,10 +33,42 @@ export function NewsletterForm() {
   return (
     <form
       className="rounded-2xl border border-white/10 bg-white/5 p-6"
-      onSubmit={(e) => {
+      onSubmit={async (e) => {
         e.preventDefault();
         if (!canSubmit) return;
-        setSubmitted(true);
+
+        setSubmitting(true);
+        setError(null);
+
+        try {
+          const res = await fetch("/api/fan-club", {
+            method: "POST",
+            headers: { "content-type": "application/json" },
+            body: JSON.stringify({
+              email,
+              country,
+              city,
+            }),
+          });
+
+          if (!res.ok) {
+            const body = (await res.json().catch(() => null)) as
+              | { error?: string }
+              | null;
+            if (body?.error === "invalid_email") {
+              setError(dict.forms.joinErrorInvalidEmail);
+            } else {
+              setError(dict.forms.joinErrorGeneric);
+            }
+            return;
+          }
+
+          setSubmitted(true);
+        } catch {
+          setError(dict.forms.joinErrorGeneric);
+        } finally {
+          setSubmitting(false);
+        }
       }}
     >
       <p className="text-sm font-semibold text-zinc-50">
@@ -68,11 +102,15 @@ export function NewsletterForm() {
 
       <button
         type="submit"
-        disabled={!canSubmit}
+        disabled={!canSubmit || submitting}
         className="mt-4 inline-flex h-11 w-full items-center justify-center rounded-full bg-zinc-50 px-6 text-sm font-semibold text-black transition hover:bg-white disabled:cursor-not-allowed disabled:opacity-50 sm:w-auto"
       >
-        {dict.actions.join}
+        {submitting ? dict.forms.submitting : dict.actions.join}
       </button>
+
+      {error ? (
+        <p className="mt-3 text-xs text-red-200">{error}</p>
+      ) : null}
 
       <p className="mt-3 text-xs text-zinc-500">
         {dict.forms.noBackendNote}
